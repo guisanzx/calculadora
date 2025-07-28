@@ -35,6 +35,13 @@ public class CalculadoraSimples {
                     valido = false;
                 }
                 break;
+            case '%':
+                resultado = (num1 * num2) / 100;
+                break;
+            default:
+                System.out.println("Operador inválido!");
+                valido = false;
+        }
             default:
                 System.out.println("Operador inválido!");
                 valido = false;
